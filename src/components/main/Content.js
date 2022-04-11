@@ -2,9 +2,9 @@ import React from 'react';
 
 function Content() {
 	return (
-		<section>
+		<main>
 			<h1>content</h1>
-		</section>
+		</main>
 	);
 }
 

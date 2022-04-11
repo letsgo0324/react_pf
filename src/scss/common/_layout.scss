@@ -17,3 +17,12 @@
 		}
 	}
 }
+
+@media screen and (max-width: $tablet) {
+	.content {
+		.inner {
+			width: 100%;
+			padding: 0 40px;
+		}
+	}
+}
