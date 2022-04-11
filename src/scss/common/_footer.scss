@@ -1,0 +1,19 @@
+footer {
+	width: 100%;
+	border-top: 1px solid #bbb;
+	padding: 100px 0;
+
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+
+		p {
+			text-align: center;
+			font: 12px/1 'arial';
+			color: #999;
+			letter-spacing: 2px;
+			text-align: center;
+		}
+	}
+}

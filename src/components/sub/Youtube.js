@@ -2,8 +2,11 @@ import React from 'react';
 
 function Youtube() {
 	return (
-		<section>
-			<h1>Youtube</h1>
+		<section className='content youtube'>
+			<figure></figure>
+			<div className='inner'>
+				<h1>Youtube</h1>
+			</div>
 		</section>
 	);
 }

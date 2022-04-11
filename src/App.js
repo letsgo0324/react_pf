@@ -47,9 +47,11 @@ function App() {
 export default App;
 
 /*
-<Route path='/gallery'> 
-	<Gallery />
-</Route>
+	<Route path='/gallery'> 
+		<Gallery />
+	</Route>
+	= <Route path='/gallery' component={Gallery} />
 
-= <Route path='/gallery' component={Gallery} />
+	- Switch : 헤더 디자인 다르게 적용하기
+
 */
