@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 
 //common 컴포넌트
@@ -16,13 +16,22 @@ import Gallery from './components/sub/Gallery';
 function App() {
 	return (
 		<>
-			<Header />
+			{/* 중첩될 경우 하나만 보이고 싶을 때, Switch로 묶어주기 */}
+			{/* Switch 같은 경로의 router 연결시 구체적인 router 하나만 적용 */}
+			<Switch>
+				{/* exact를 붙여서 메인 페이지에서만 보이게 하기 */}
+				<Route exact path='/'>
+					{/* 메인에만 적용되는 header */}
+					<Header type={'main'} />
+					<Visual />
+					<Content />
+				</Route>
 
-			{/* exact를 붙여서 메인 페이지에서만 보이게 하기 */}
-			<Route exact path='/'>
-				<Visual />
-				<Content />
-			</Route>
+				<Route path='/'>
+					{/* 서브에만 적용되는 header */}
+					<Header type={'sub'} />
+				</Route>
+			</Switch>
 
 			{/* youtube 서브페이지에서만 보이게 하기 */}
 			<Route path='/youtube' component={Youtube} />
