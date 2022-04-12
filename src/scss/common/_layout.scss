@@ -9,11 +9,22 @@
 		min-height: 400px;
 		margin: 100px auto 150px;
 		position: relative;
+		transform: translateY(100px);
+		opacity: 0;
+		transition: 1s;
 
 		h1 {
 			font: normal 20px/1 'arial';
 			color: #777;
 			margin-bottom: 50px;
+		}
+	}
+
+	//frame에 on이 붙었을때 서서히 올라오는 화면 만들기
+	&.on {
+		.inner {
+			transform: translateY(0);
+			opacity: 1;
 		}
 	}
 }

@@ -12,6 +12,7 @@ import Content from './components/main/Content';
 //sub 컴포넌트
 import Youtube from './components/sub/Youtube';
 import Gallery from './components/sub/Gallery';
+import Member from './components/sub/Member';
 
 function App() {
 	return (
@@ -39,6 +40,8 @@ function App() {
 			{/* gallery 서브페이지에서만 보이게 하기 */}
 			<Route path='/gallery' component={Gallery} />
 
+			<Route path='/member' component={Member} />
+
 			<Footer />
 		</>
 	);
@@ -53,5 +56,4 @@ export default App;
 	= <Route path='/gallery' component={Gallery} />
 
 	- Switch : 헤더 디자인 다르게 적용하기
-
 */
